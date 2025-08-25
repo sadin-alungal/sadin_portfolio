@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muhammed Sadin — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero / Intro Section -->
+  <header class="section" id="home">
+    <h1>Muhammed Sadin</h1>
+    <p>Aspiring Ethical Hacker & Cybersecurity Enthusiast</p>
+  </header>
+
+  <!-- About Me -->
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m <strong>Muhammed Sadin</strong>, an aspiring ethical hacker with a strong interest in 
+      cybersecurity and penetration testing. I enjoy exploring vulnerabilities, documenting my 
+      learning journey, and building hands-on skills through labs and simulations.  
+    </p>
+    <p>
+      My main focus is on ethical hacking, bug hunting, and networking fundamentals. 
+      I’m passionate about growing in this field and aim to contribute by building secure systems 
+      and spreading awareness about cyber threats.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <h2>Featured Projects</h2>
+    <div class="grid cols-3" style="margin-top:1rem;">
+
+      <article class="card project">
+        <div class="chip">Security Lab</div>
+        <h3>VulnHub / TryHackMe Notes</h3>
+        <p>Practice writeups covering enumeration steps, exploitation paths, and remediation ideas. Redacted sensitive info; purely educational.</p>
+        <a href="#" aria-disabled="true">(link coming soon)</a>
+      </article>
+
+      <article class="card project">
+        <div class="chip">Web</div>
+        <h3>Mini Recon Toolkit</h3>
+        <p>Tiny bash/Python scripts to automate recon: subdomain discovery, screenshots, and wordlists.</p>
+        <a href="#" aria-disabled="true">(repo coming soon)</a>
+      </article>
+
+      <article class="card project">
+        <div class="chip">Learning</div>
+        <h3>Notes: OSI & Networking</h3>
+        <p>Structured notes on the OSI model, attacks per layer, and secure design ideas — great for quick revision.</p>
+        <a href="#" aria-disabled="true">(docs coming soon)</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <h2>Skills</h2>
+    <div class="grid cols-3" style="margin-top:1rem;">
+      <div class="card" style="padding:1.1rem;">
+        <h3>Security</h3>
+        <p class="subtitle">Burp Suite • OWASP Top 10 • Basic Recon • Wordlists</p>
+      </div>
+      <div class="card" style="padding:1.1rem;">
+        <h3>Networking</h3>
+        <p class="subtitle">OSI model • TCP/IP • Subnetting • Packet Tracer</p>
+      </div>
+      <div class="card" style="padding:1.1rem;">
+        <h3>Tools & Langs</h3>
+        <p class="subtitle">Linux • Bash • Python • Git • Nmap</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p class="subtitle">Want to collaborate or say hello? Reach me here:</p>
+    <div class="contact" style="margin-top:.8rem;">
+      <a class="btn" href="mailto:sadinalungal@gmail.com" aria-label="Email">📧 Email</a>
+      <a class="btn" href="https://www.linkedin.com/in/muhammed-sadin-062401375" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn">💼 LinkedIn</a>
+      <a class="btn" href="#" aria-disabled="true">🐙 GitHub (soon)</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="card" style="padding:1rem 1.2rem; display:flex; justify-content:space-between; align-items:center;">
+        <div>© <span id="year"></span> Muhammed Sadin. All rights reserved.</div>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReduced) {
+      document.documentElement.style.scrollBehavior = 'smooth';
+    }
+  </script>
+</body>
+</html>
